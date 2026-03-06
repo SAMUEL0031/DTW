@@ -1,0 +1,267 @@
+/* --- GLOBAL & FONTS --- */
+body { font-family: 'Arial', sans-serif; margin: 0; color: #333; }
+
+/* --- 1. HEADER -- */
+/* Container Utama Kuning */
+.uph-program-header {
+    background-color: #f1b31c; /* Kuning UPH */
+    padding: 100px 10% 55px 10%; /* Atas, Kiri/Kanan, Bawah */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.uph-header-wrapper {
+    max-width: 1400px; /* Menjaga agar konten tidak terlalu lebar di monitor besar */
+    margin: 0;
+}
+
+/* Judul Program */
+.uph-title {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: #000;
+    margin: 0 0 16px;
+    letter-spacing: -1px;
+}
+
+/* Garis Tipis yang kamu mau */
+.uph-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.4); /* Hitam transparan tipis */
+    margin: 30px 0; /* Jarak antara judul dan info */
+}
+
+/* Grid Info Berjejer ke Kanan */
+.uph-info-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* KUNCI: Rapat ke kiri */
+    gap: 80px; /* Jarak antar kolom info (bisa kamu kurangi kalau mau lebih rapat) */
+    flex-wrap: wrap;
+}
+
+.uph-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.uph-info-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #c3baba;
+    letter-spacing: 1.35px;
+}
+
+.uph-info-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .uph-title { font-size: 2.2rem; }
+    .uph-info-grid { gap: 30px; }
+    .uph-info-item { min-width: 40%; }
+}
+
+/* --- 2. INFO BAR --- */
+.info-bar-section { padding: 0 10%; margin-top: -60px; }
+.info-bar { 
+    background: white; display: flex; justify-content: space-between; 
+    padding: 40px; border-bottom: 1px solid #ddd;
+}
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: max-content;}
+.info-item .label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;}
+.info-item .value {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;}
+
+/* --- 3. OVERVIEW & CAREER --- */
+.overview-career-section { 
+    display: grid; grid-template-columns: 1.5fr 1fr; 
+    padding: 80px 10%; gap: 60px; 
+}
+.overview-box h2, .career-box h2 { font-size: 2.2rem; margin-bottom: 30px; }
+.overview-box p { line-height: 1.8; font-size: 0.88 rem; color: #444; text-align:justify; }
+.career-list { padding-left: 35px; }
+.career-list li { margin-bottom: 12px; font-size: 1.1rem; font-weight: 500; }
+
+/* --- 4. CURRICULUM --- */
+.curriculum-detail { padding: 40px 10% 100px 10%; }
+.curriculum-header-main h2 { font-size: 2.2rem; margin-bottom: 10px; }
+.header-line-slim { border: 0; height: 1px; background: #333; margin-bottom: 50px; }
+
+.year-title-row { 
+    display: flex; justify-content: space-between; align-items: center; 
+    border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-bottom: 30px;
+}
+.circle-arrow { 
+    width: 35px; height: 35px; border: 1px solid #000; border-radius: 50%; 
+    display: flex; justify-content: center; align-items: center; 
+}
+
+.semester-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.semester-box { background: #f9f9f9; padding: 25px; border-radius: 5px; }
+.semester-name { 
+    font-weight: bold; font-size: 1.2rem; margin-bottom: 20px; 
+    border-bottom: 2px solid #f1b31c; display: inline-block; padding-bottom: 5px;
+}
+
+.course-table { width: 100%; border-collapse: collapse; }
+.course-table th { text-align: left; font-size: 0.9rem; padding-bottom: 15px; border-bottom: 1px solid #ccc; }
+.course-table td { padding: 12px 0; font-size: 0.95rem; border-bottom: 1px solid #eee; }
+.course-table td:last-child { text-align: right; font-weight: bold; }
+
+/* --- ACTION SECTION (THEMA PUTIH) --- */
+.action-section {
+    background-color: #fff;
+    padding: 60px 10%;
+}
+
+.action-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-orange {
+    background-color: #ffb700;
+    color: #000;
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-black {
+    background-color: #000;
+    color: #fff;
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+  /* FOOTER */
+.uph-footer {
+  background: black;
+  color: white;
+  padding: 35px 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-around;
+}
+
+.footer-logo img {
+  width: 225px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-weight: bold;
+}
+
+.footer-contact,
+.footer-campuses,
+.footer-links {
+  max-width: 330px;
+}
+
+.footer-contact h4,
+.footer-campuses h4,
+.footer-links h4 {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+
+.footer-campuses ul,
+.footer-links ul {
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+.footer-campuses li,
+.footer-links li {
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+/* Bagian tambahan */
+.footer-extension {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-bottom-left {
+  font-size: 0.85rem;
+  letter-spacing: 0.65px;
+}
+
+.footer-bottom-left p {
+  margin: 0 0 5px 0;
+}
+
+.footer-bottom-left a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-bottom-right a img {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}

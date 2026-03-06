@@ -1,0 +1,21 @@
+.bg-red {
+	background-color: #461213 !important;
+}
+
+.bg-white {
+	background-color: white !important;
+}
+
+.btn-red {
+	background: linear-gradient(to right, #e53935, #721313);
+	color: white;
+	padding: 10px 24px;
+	border: none;
+	border-radius: 24px;
+}
+
+.nav-logo {
+	max-height: 40px;
+	width: auto;
+	display: block;
+}

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPH Style Page</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="uph-header">
+    <div class="logo">
+      <img src="https://www.uph.edu/wp-content/uploads/2025/10/UPH-Web-Logo-White-2025.png?x52864" alt="UPH Logo" />
+      Universitas Pelita Harapan
+    </div>
+    <div class="header-right">
+      <nav>
+        <a href="#">EN</a> | <a href="#">ID</a>
+        <a href="#" class="apply-btn">APPLY NOW</a>
+      <button class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      </nav>
+    </div>
+  </header>
+
+  <style>
+    /* HEADER */
+    .uph-header {
+      position: relative;
+      top: 0; left: 0;
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      background: #000000;
+      z-index: 10;
+    }
+
+    .uph-header .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .uph-header img {
+      height: 40px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .uph-header nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .uph-header nav a {
+      color: white;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    .apply-btn {
+      background-color: #ffcc00;
+      color: #003366;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .hamburger-menu {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      width: 30px;
+      height: 24px;
+      justify-content: space-between;
+      margin-left: 0;
+    }
+
+    .hamburger-menu span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: white;
+      border-radius: 2px;
+    }
+
+  </style>
+  
+  <!-- COVER SECTION -->
+  <section class="cover-section">
+    <div class="uph-cover">
+      <h2 style="color:white;">Shaping minds to build a brighter future<br>through knowledge and vision.</h2>
+    </div>
+  </section>
+
+   <style>
+  /* COVER / HERO */
+    .uph-cover {
+      background: url('https://www.uph.edu/wp-content/uploads/2025/01/banner-scaled-min.jpg?x52864') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      text-align: left;
+      padding: 0 50px 100px 80px;
+    }
+
+    .uph-cover h2 {
+      color: white;
+      max-width: 550px;
+      font-size: 1.9rem;
+      line-height: 1.3;
+      font-weight: bold;
+    }
+
+    .cover-overlay {
+      background: rgba(0,0,0,0.4); /* transparan untuk teks */
+      color: white;
+      padding: 50px;
+    }
+  </style>
+
+  <!-- highlight -->
+  <section class="highlight-section">
+    <table class="highlight-table">
+      <tr>
+        <!-- Kiri -->
+        <td class="highlight-left">
+          <img src="https://www.uph.edu/wp-content/uploads/2025/02/Highlight-UPH-3-e1750231113335.jpg?x52864" alt="medical-Professional">
+        </td>
+        
+        <!-- Kanan -->
+        <td class="highlight-right">
+          <h2>Pioneering Anesthesiology & Intensive Therapy programmes in Indonesia.</h2>
+          <a href="#" class="read-btn">Read More</a>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <style>
+    .highlight-section {
+      background-color: black;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .highlight-table {
+      width: 100%;
+      border-collapse: collapse;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .highlight-left {
+      width: 50%;
+      vertical-align: middle;
+      padding: 20px;
+    }
+
+    .highlight-left img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .highlight-right {
+      width: 50%;
+      vertical-align: middle;
+      padding: 40px;
+    }
+
+    .highlight-right h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      font-weight: normal;
+    }
+
+    .uph-highlight {
+      flex: 1;
+    }
+
+    .uph-highlight img {
+      width: 100%;
+      max-width: 500px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .highlight-text {
+      flex: 1;
+      background-color: black; /* sisi kanan hitam */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .highlight-text h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .read-btn {
+      background-color: transparent; /* sesuai sumber: hitam dengan border tipis */
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid white; /* border tipis putih */
+      border-radius: 4px;
+      width: fit-content;
+    }
+  </style> 
+    
+  <!-- FEATURED PROGRAMS -->
+  <section class="featured-programs">
+  <h2>Featured Programs</h2>
+  <p>Explore our top programs, designed with comprehensive curriculum.</p>
+
+  </section>
+
+  <table class="programs-table">
+    <tr>
+      <td class="program-cell"><img src="https://www.uph.edu/wp-content/uploads/2024/08/Visual-Communication-Design-featured.jpg?x52864" alt="Icon" width="378" height="283"><span class="program-label">Visual Communication Design: Graphic Design</span></td>
+      <td class="program-cell"><img src="https://www.uph.edu/wp-content/uploads/2024/08/Medicine-1-e1750228158979.jpg?x52864" alt="Icon" width="378" height="283"><span class="program-label">Medicine</span></td>
+      <td class="program-cell"><img src="https://www.uph.edu/wp-content/uploads/2024/08/Food-Business-Entrepreneurship-e1750229338845.jpg?x52864" alt="Icon" width="378" height="283"><span class="program-label">Food Business and Entrepreneurship</span></td>
+    </tr>
+    <tr>
+      <td class="program-cell"><img src="https://www.uph.edu/wp-content/uploads/2024/08/Supply-Chain-Management-Analytics-e1750229566634.jpg?x52864" alt="Icon" width="378" height="283"><span class="program-label">Supply Chain Management and Analytics</span></td>
+      <td class="program-cell"><img src="https://www.uph.edu/wp-content/uploads/2024/07/Business-Law-e1750228559256.jpg?x52864" alt="Icon" width="378" height="283"><span class="program-label">Business Law</span></td>
+      <td class="program-cell"><img src="https://www.uph.edu/wp-content/uploads/2024/08/Marketing-Retail-Innovation-e1750227926422.jpg?x52864" alt="Icon" width="378" height="283"><span class="program-label">Marketing, Retail, and Innovation</span></td>
+    </tr>
+  </table>
+
+  <style>
+    .featured-programs {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .featured-programs h2 {
+      font-size: 2rem;
+      color: #000000;
+      margin-bottom: 10px;
+  }
+
+    .featured-programs p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .program-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .program-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .program-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .program-info {
+      padding: 20px;
+      background-color: white;
+    }
+
+    .program-info h3 {
+      font-size: 0.95rem;
+      color: #003366;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .program-item {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .program-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .program-item h3 {
+      font-size: 1rem;
+      padding: 15px;
+      color: #000000;
+    }
+
+    .programs-table {
+      width: 100%;
+      margin: 30px 0;
+      border-collapse: collapse;
+    }
+
+    .program-cell {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .program-cell img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .program-label {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      max-width: calc(100% - 20px);
+      line-height: 1.3;
+    }
+  </style>
+
+<!-- Discover more Page -->
+<section class="discover-programs">
+  <div class="discover-content">
+    <h2>Discover More Programs</h2>
+    <p>Navigate your future with our diverse program choices.</p>
+
+    <form class="program-search">
+      <input type="text" placeholder="Search..." />
+      <select>
+        <option>All Level</option>
+        <option>Undergraduate</option>
+        <option>Graduate</option>
+      </select>
+      <select>
+        <option>Program Type</option>
+        <option>Full-time</option>
+        <option>Part-time</option>
+      </select>
+      <select>
+        <option>Faculty</option>
+        <option>Medicine</option>
+        <option>Design</option>
+        <option>Business</option>
+      </select>
+      <button type="submit">Browse</button>
+    </form>
+  </div>
+</section>
+
+  <style>
+    .discover-programs {
+      background: linear-gradient(to right, #1a1a1a, #333);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .discover-content h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .discover-content p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .program-search {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .program-search input,
+    .program-search select {
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      width: 180px;
+    }
+
+    .program-search input::placeholder {
+      color: #999;
+    }
+
+    .program-search button {
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: #003366;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+
+<!-- Latest Stories -->
+  <div class="section-header">
+    <h2>Latest Stories</h2>
+    <p>Discover what’s new and what’s coming up in our faculty.</p>
+  </div>
+
+  <div class="stories-grid">
+    <!-- Artikel Utama -->
+    <div class="main-story">
+      <img src="https://www.uph.edu/wp-content/uploads/2022/04/Desain-Komunikasi-Visual-adv-news-featured-min.jpg?x69092" alt="Computer Lab">
+      <div class="story-card">
+        <span class="date">26/01/2026</span>
+        <span class="category">Art, Culture, Music & Design, Article</span>
+        <h3>Visual Communication Design: Programme Advantages & Career Prospects</h3>
+      </div>
+    </div>
+
+    <!-- Artikel Kecil -->
+    <div class="side-stories">
+      <div class="story-card">
+        <img src="https://www.uph.edu/wp-content/uploads/2026/01/NEW-FEATURED-IMAGES-Website-Field-Trip-TC-Dubes-AS.jpg?x52864" alt="Teachers College">
+        <div class="story-info">
+          <span class="date">20/01/2026</span>
+          <span class="category">Education</span>
+          <h3>Mahasiswa Teachers College UPH Asah Kemampuan Diplomasi…</h3>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <img src="https://www.uph.edu/wp-content/uploads/2026/01/ILUSTRASI-PEMBAJAKAN-FILM.jpg?x52864" alt="Business & AVISI">
+        <div class="story-info">
+          <span class="date">15/01/2026</span>
+          <span class="category">Business & Government</span>
+          <h3>Studi Kolaboratif FEB UPH dan AVISI Jadi Rujukan Pemerintah…</h3>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <img src="https://www.uph.edu/wp-content/uploads/2026/01/NEW-FEATURED-IMAGES-WEBSITE-Tanggap-Darurat-FK-UPH-1.jpg?x52864" alt="Medical Sciences">
+        <div class="story-info">
+          <span class="date">12/01/2026</span>
+          <span class="category">Medical Sciences</span>
+          <h3>Presentasi Mahasiswa Kedokteran UPH Tentang Inovasi Kesehatan…</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <style>
+    .latest-stories {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .section-header {
+      text-align: left;
+      margin-bottom: 55px;
+      padding-left: 60px;
+      margin-top: 80px;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+      color: #000000;
+    }
+
+    .section-header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .stories-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 70px;
+    }
+
+    .main-story {
+      flex: 2;
+      position: relative;
+    }
+
+    .main-story img {
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .story-meta {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .side-stories {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .story-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-story .story-card {
+      padding: 30px;
+    }
+
+    .story-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: contain;
+      background-color: #f0f0f0;
+    }
+
+    .story-info {
+      padding: 15px;
+    }
+
+    .story-info .date,
+    .story-info .category {
+      display: block;
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 5px;
+    }
+
+    .story-info h3 {
+      font-size: 1rem;
+      color: #000000;
+    }
+  </style>
+
+  <section class="alumni-section">
+  <table class="alumni-table">
+    <tr>
+      <!-- Kiri -->
+      <td class="alumni-left">
+        <h2>What Alumni Say</h2>
+        <p>Hear what our accomplished alumni have to say about their experience with us!</p>
+        <a href="#" class="read-btn">Read More</a>
+      </td>
+
+      <!-- Kanan -->
+      <td class="alumni-right">
+        <span class="alumni-card">
+          <img src="https://www.uph.edu/wp-content/uploads/2025/02/Wahyu-Wiwoho-e1750233689215.jpeg?x52864" alt="Wahyu Wiwoho">
+          <span class="alumni-text">
+            <blockquote>
+              "For me, UPH is more than just a place to study. UPH is a place to expand networks and prepare oneself to face various challenges in the future."
+            </blockquote>
+            <span class="alumni-name">Wahyu Wiwoho</span>
+            <p>Communication Sciences 2000</p>
+            <p>Founder of PickYourTalent</p>
+          </span>
+        </span>
+      </td>
+    </tr>
+  </table>
+</section>
+
+  <style>
+    .alumni-section {
+      background: black;
+      color: white;
+      padding: 70px 35px;
+      margin-top: 80px;
+    }
+
+    .alumni-table {
+      width: 90%;
+      border-collapse: collapse;
+    }
+
+    .alumni-left, .alumni-right {
+      vertical-align: top;
+      padding: 20px;
+    }
+
+    .alumni-left {
+      width: 18%;
+    }
+
+    .alumni-left h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .alumni-left p {
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .alumni-right {
+      width: 48%;
+      padding: 0;
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 85px;
+    }
+
+    .alumni-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      background-color: white;
+      color: #040404;
+      padding: 12px;
+      border-radius: 20px;
+      margin-left: auto;
+    }
+
+    .alumni-card img {
+      max-width: 180px;
+      min-width: 180px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .alumni-text {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      flex: 1;
+    }
+
+    .alumni-card blockquote {
+      font-style: normal;
+      margin: 10;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+    }
+
+    .alumni-content {
+      background-color: white;
+      color: #003366;
+      padding: 30px;
+      border-radius: 6px;
+      text-align: left;
+      flex: 1;
+    }
+
+    .alumni-right blockquote {
+      font-style: italic;
+      margin: 20px 0;
+    }
+
+    .alumni-name {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      font-style: normal;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .read-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      border: 1.23px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+
+<section class="social-section">
+  <h2>Follow us on Instagram</h2>
+  <p>Visit our social media →</p>
+  <div class="social-grid">
+    <div class="social-post"><img src="https://scontent.cdninstagram.com/v/t51.82787-15/621441714_18553397938042542_111807675260156385_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=gUd18_zd0_YQ7kNvwH5txgl&_nc_oc=Admo5NNEF3RXby7zWGbw95MxKcCpJs8mgFcQ_YdH14g2-uws2Jly7t5PgaUx4CQdR_s&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=tWAJfpSs0skVCHmRLxZZnw&oh=00_AfqORT9svm1gaBS4mdOd-sJ355UYNAk1_4gOYwG2sO7jZw&oe=697F8B75"></div>
+    <div class="social-post"><img src="https://scontent.cdninstagram.com/v/t51.82787-15/620473790_18552546283042542_5265234985778787295_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=640k1vqrSgIQ7kNvwFonONO&_nc_oc=AdkvqvZBp09YwHfZJs6hVX7ZHzs_tAKQPCIDyxMPmri2F5a0fZB9bIo1Dqt-qRIqLog&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=tWAJfpSs0skVCHmRLxZZnw&oh=00_Afq8nDLebmenMx0VRzfRd15dk0z2wv5EuFycson8ZH_VSg&oe=697F7923" alt="AT LEAST NGERTI DIKIT PAS DOSEN JELASIN"></div>
+    <div class="social-post"><img src="https://scontent.cdninstagram.com/v/t51.82787-15/619203352_18551864398042542_319056930007285693_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=w0mXBq-W4okQ7kNvwFsiFzX&_nc_oc=AdmkW11TcqEZX_x3daWEjFoOavHGZOtKM2i7iU8_wZSOxxuL3A5C91JEYl15lCqm_F4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=tWAJfpSs0skVCHmRLxZZnw&oh=00_AfrLwhnczvgF9jap-0VRpcjlWZ6UtdyYr4wItLkxPg48QQ&oe=697F9B67"></div>
+  </div>
+</section>
+
+  <style>
+    .social-section {
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .social-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-post {
+      background: #333;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 300px;
+      font-size: 0.95rem;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+    }
+
+    .social-post img {
+      width: 100%;
+      height: 100%;
+      object-fit: full-width;
+    }
+  </style>
+
+<footer class="uph-footer">
+  <div class="footer-top">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="https://www.uph.edu/wp-content/uploads/2025/10/UPH-Web-Logo-White-2025.png?x69092" alt="UPH Logo">
+    </div>
+
+    <!-- Kontak -->
+    <div class="footer-contact">
+      <h4>Contact Information</h4>
+      <p>Jl. M. H. Thamrin Boulevard 1100<br>Lippo Village Tangerang 15811<br>Indonesia</p>
+      <p>(021) 546 0901</p>
+      <p>undergraduate.admission@uph.edu<br>graduate.admission@uph.edu</p>
+    </div>
+
+    <!-- Kampus -->
+    <div class="footer-campuses">
+      <h4>Our Campuses</h4>
+      <ul>
+        <li>UPH Medan</li>
+        <li>UPH Surabaya</li>
+        <li>UPH College</li>
+        <li>UPH Learning Center</li>
+        <li>Lembaga Sertifikasi Profesi</li>
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li>Alumni</li>
+        <li>UPH Festival</li>
+        <li>Careers</li>
+        <li>Contact List</li>
+        <li>Contact Us</li>
+        <li>Registrar</li>
+        <li>Academic Calendar</li>
+        <li>Academic Calendar (Medicine)</li>
+        <li>Academic Calendar (S2)</li>
+        <li>Academic Calendar (S3)</li>
+        <li>Quiz</li>
+        <li>SDGs UPH</li>
+        <li>Green Campus UPH</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-extension">
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <p>© Copyright 2025 Yayasan Universitas Pelita Harapan. All Rights Reserved.</p>
+      </div>
+      <div class="footer-bottom-right">
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/476/small/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/031/737/206/small/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.png" alt="X"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/413/large_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="Instagram"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="LinkedIn"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/572/large_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* FOOTER */
+.uph-footer {
+  background: black;
+  color: white;
+  padding: 35px 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-around;
+}
+
+.footer-logo img {
+  width: 225px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-weight: bold;
+}
+
+.footer-contact,
+.footer-campuses,
+.footer-links {
+  max-width: 330px;
+}
+
+.footer-contact h4,
+.footer-campuses h4,
+.footer-links h4 {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+
+.footer-campuses ul,
+.footer-links ul {
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+.footer-campuses li,
+.footer-links li {
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+/* Bagian tambahan */
+.footer-extension {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-bottom-left {
+  font-size: 0.85rem;
+  letter-spacing: 0.65px;
+}
+
+.footer-bottom-left p {
+  margin: 0 0 5px 0;
+}
+
+.footer-bottom-left a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-bottom-right a img {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}
+</style>
+
+  </body>
+</html>

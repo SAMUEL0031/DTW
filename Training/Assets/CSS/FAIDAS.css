@@ -1,0 +1,768 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /* HEADER */
+    .uph-header {
+      position: relative;
+      top: 0; left: 0;
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      background: #000000;
+      z-index: 10;
+    }
+
+    .uph-header .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .uph-header img {
+      height: 40px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .uph-header nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .uph-header nav a {
+      color: white;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    .apply-btn {
+      background-color: #ffffffe3;
+      color: #000000;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .apply-btn:hover {
+      background-color: white;
+      color: #000000;
+    }
+
+    .hamburger-menu {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      width: 30px;
+      height: 24px;
+      justify-content: space-between;
+      margin-left: 0;
+    }
+
+    .hamburger-menu span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: white;
+      border-radius: 2px;
+    }
+
+    /* Container Utama */
+.programs-section {
+    padding: 60px 10%;
+    background-color: #ffffff;
+}
+
+/* Garis di bawah judul utama Programs */
+.title-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0; /* Abu-abu tipis */
+    margin-top: 15px;    /* Jarak dari tulisan Programs */
+    margin-bottom: 10px; /* Jarak ke frame kategori di bawahnya */
+    width: 100%;         /* Memanjang penuh */
+}
+
+/* Pastikan container judul tidak punya padding bawah yang terlalu besar */
+.main-title-container {
+    margin-bottom: 20px;
+}
+
+/* Frame Besar yang Membungkus Semua */
+.all-programs-frame {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style Grup di Dalam Frame */
+.program-group {
+    padding: 40px 0; /* Memberi jarak atas bawah di dalam frame */
+}
+
+/* Garis Tipis Pemisah */
+.thin-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0; /* Abu-abu sangat muda */
+    margin: 0;
+    width: 100%;
+}
+
+.group-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.group-header h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.circle-icon {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid Kartu */
+.group-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+
+/* Reset Link & Program Card */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.program-card {
+    background-color: #f9f9f9;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    min-height: 70px;
+}
+
+.orange-indicator {
+    width: 6px;
+    height: 100%;
+    background-color: #ffb700;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+    /* Banner */
+/* Container Utama Banner */
+.f-banner {
+    position: relative;
+    height: 550px; /* Tinggi banner bisa disesuaikan */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10%;
+    overflow: hidden;
+    background-color: #000; /* Warna dasar jika gambar gagal load */
+}
+
+/* Gambar Background */
+.f-banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.f-banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8); /* Memberi sedikit kegelapan agar teks putih menonjol */
+}
+
+/* EFEK OVERLAY KUNING GRADASI */
+.f-yellow-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Menutupi seluruh banner agar gradasi lebih smooth */
+    z-index: 2;
+    /* Gradasi: Transparan di atas, Kuning Pekat di bawah */
+    background: linear-gradient(
+        to bottom, 
+        rgba(241, 179, 28, 0) 30%,    /* Transparan dari atas sampai tengah */
+        rgba(241, 179, 28, 0.4) 60%,  /* Mulai menguning tipis */
+        rgba(241, 179, 28, 1) 100%    /* Kuning solid di bagian paling bawah */
+    );
+}
+
+/* Konten Teks */
+.f-banner-content {
+    position: relative;
+    z-index: 3; /* Di atas overlay */
+    max-width: 800px;
+    color: #fff;
+}
+
+.f-banner-title {
+    font-size: 3.3rem;
+    font-weight: 800;
+    margin: 15px 0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Agar teks tetap terbaca di area terang */
+}
+
+.f-banner-desc {
+    font-size: 0.93rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Navigation */
+/* Container Navigasi */
+.page-navigation {
+    padding: 20px 10% 0 10%;
+    background-color: #fff;
+}
+
+.nav-links-container {
+    display: flex;
+    gap: 40px; /* Jarak antar menu */
+    margin-bottom: 10px;
+}
+
+/* Style Item Navigasi */
+.page-nav-item {
+    text-decoration: none;
+    color: #666; /* Warna awal abu-abu */
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Biar transisi warna halus */
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* --- EFEK HOVER (SAAT DITUNJUK) --- */
+.page-nav-item:hover {
+    color: #000; /* Berubah jadi Hitam Pekat */
+}
+
+/* Efek Garis Bawah Muncul Saat Hover (Opsional tapi keren) */
+.page-nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f1b31c; /* Warna kuning UPH */
+    transition: width 0.3s ease;
+}
+
+.page-nav-item:hover::after {
+    width: 100%; /* Garis kuning memanjang saat ditunjuk */
+}
+
+/* Garis abu-abu panjang di bawah seluruh menu */
+.nav-underline {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 0;
+}
+
+  .latest-activities {
+    background-color: #000; /* Latar belakang hitam pekat */
+    color: white;
+    padding: 80px 10%;
+    overflow: hidden;
+}
+
+.activities-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Bagian Teks Kiri */
+.activities-info {
+    flex: 0 0 300px; /* Lebar tetap untuk kolom teks */
+}
+
+.activities-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.activities-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.more-articles-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.more-articles-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Bagian Slider Kanan */
+.activities-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    padding-bottom: 20px;
+    scrollbar-width: auto; /* Untuk Firefox */
+    scrollbar-color: #666 #000;
+}
+
+/* Gaya Kartu */
+.activity-card {
+    flex: 0 0 300px; /* Lebar setiap kartu */
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content .date {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-content h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Gaya Scrollbar untuk Chrome/Edge */
+.activities-slider::-webkit-scrollbar {
+    height: 8px;
+}
+.activities-slider::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+    .facilities-section {
+    padding: 80px 10%;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.facilities-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* TATA LETAK GRID (3 KOLOM) */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membagi menjadi 3 kolom sama besar */
+    gap: 25px; /* Jarak antar kartu */
+}
+
+/* KARTU FASILITAS */
+.facility-card {
+    position: relative;
+    border-radius: 15px; /* Sudut melengkung sesuai gambar */
+    overflow: hidden;    /* Memastikan gambar ikut melengkung */
+    aspect-ratio: 4 / 3; /* Menjaga ukuran kotak tetap proporsional */
+}
+
+.facility-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gambar memenuhi kotak tanpa gepeng */
+    display: block;
+}
+
+/* OVERLAY TEKS DI ATAS GAMBAR */
+.facility-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    /* Memberikan efek gradasi hitam agar teks putih terbaca jelas */
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+}
+
+.facility-overlay p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* EFEK HOVER (TAMBAHAN AGAR LEBIH HIDUP) */
+.facility-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+    .faculty-members {
+    padding: 80px 10%;
+    background-color: #f9f9f9; /* Latar belakang abu-abu sangat muda */
+}
+
+.members-container {
+    display: flex;
+    gap: 40px;
+}
+
+/* Bagian Judul (Kiri) */
+.members-intro {
+    flex: 0 0 250px;
+}
+
+.members-intro h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.members-intro p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Bagian Grid (Kanan) */
+.members-content {
+    flex: 1;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Kolom */
+    gap: 20px;
+}
+
+/* Kartu Member */
+.member-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.member-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 15px;
+}
+
+.member-info h4 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.member-info .role {
+    font-size: 0.75rem;
+    color: #cc8800; /* Warna orange kecokelatan untuk jabatan */
+    font-weight: bold;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.pagination span {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.pagination span.active {
+    color: #000;
+    font-weight: bold;
+}
+
+  /* --- ALUMNI SECTION (THEMA HITAM) --- */
+.alumni-section {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 5% 80px 10%; /* Padding kanan dikurangi agar kartu terpotong sedikit (memberi kesan bisa di-scroll) */
+    overflow: hidden;
+}
+
+.alumni-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.alumni-info {
+    flex: 0 0 280px; /* Lebar teks judul tetap */
+}
+
+.alumni-info h2 {
+    margin-top: 25px;
+    font-size: 2.2rem;
+   margin-bottom: 15px;
+}
+
+/* CONTAINER SLIDER */
+.alumni-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto; /* Membuat kartu bisa di-scroll ke kanan */
+    padding-bottom: 30px;
+    scroll-behavior: smooth;
+}
+
+/* Menghilangkan scrollbar bawaan agar rapi (Opsional) */
+.alumni-slider::-webkit-scrollbar {
+    height: 8px;
+}
+.alumni-slider::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+/* KARTU ALUMNI */
+.alumni-card {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 0 0 700px; /* PAKSA lebar kartu agar tidak mengecil */
+    height: 320px;
+}
+
+.alumni-photo {
+    flex: 0 0 220px;
+}
+
+.alumni-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.alumni-text-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+/* --- ACTION SECTION (THEMA PUTIH) --- */
+.action-section {
+    background-color: #fff;
+    padding: 60px 10%;
+}
+
+.action-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-orange {
+    background-color: #ffb700;
+    color: #000;
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-black {
+    background-color: #000;
+    color: #fff;
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+  /* FOOTER */
+.uph-footer {
+  background: black;
+  color: white;
+  padding: 35px 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-around;
+}
+
+.footer-logo img {
+  width: 225px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-weight: bold;
+}
+
+.footer-contact,
+.footer-campuses,
+.footer-links {
+  max-width: 330px;
+}
+
+.footer-contact h4,
+.footer-campuses h4,
+.footer-links h4 {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+
+.footer-campuses ul,
+.footer-links ul {
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+.footer-campuses li,
+.footer-links li {
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+/* Bagian tambahan */
+.footer-extension {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-bottom-left {
+  font-size: 0.85rem;
+  letter-spacing: 0.65px;
+}
+
+.footer-bottom-left p {
+  margin: 0 0 5px 0;
+}
+
+.footer-bottom-left a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-bottom-right a img {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}
